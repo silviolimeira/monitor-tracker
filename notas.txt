@@ -1,0 +1,87 @@
+
+Executando build:
+$ mvn clean install 
+
+Executando pelo maven:
+$ mvn spring-boot:run
+$ ./mvnw spring-boot:run
+
+
+
+Projeto String:
+/d/projetos/2021/startup/demo-spring-boot-mvc (main)
+
+
+Installing Infinity on Grafana Cloud:
+https://www.youtube.com/watch?v=Wmgs1E9Ry-s
+https://grafana.com/grafana/plugins/yesoreyeram-infinity-datasource/?tab=installation
+
+google cloud:
+https://www.youtube.com/watch?v=0zJUK-SwPqQ
+
+Nome do Projeto: My First Project
+ID do Projeto: keen-metric-317321
+Número do Projeto: 974186009914
+
+
+
+
+Grafana Labs
+https://grafana.com/grafana/deployment-options/
+
+Products:
+https://grafana.com/products/cloud/
+
+Download:
+https://grafana.com/grafana/download
+
+Open Source:
+https://grafana.com/oss/
+
+Learn:
+https://grafana.com/blog/
+
+
+
+Sample using grafana-8.0.2.windows-amd64.zip
+
+
+.if you in skip-grant-tables mode
+in mysqld_safe:
+
+UPDATE mysql.user SET authentication_string=null WHERE User='root';
+FLUSH PRIVILEGES;
+exit;
+and then, in terminal:
+
+mysql -u root -p
+in mysql:
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'yourpasswd';
+2.not in skip-grant-tables mode
+just in mysql:
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'yourpasswd';
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin>
+mysql -u root -p 
+
+
+
+mysql> SHOW DATABASES;
+mysql> CREATE DATABASE monitor_tracker;
+mysql> exit
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin>
+mysql -u root -p monitor_tracker < D:\projetos\2021\startup\projeto-1\script.sql
+
+Backup do Banco MySQL: 
+ref: https://aristides.dev/script-de-backup-de-banco-de-dados-mysql/
+
+mysqldump -uroot -padmin monitor_tracker > d:\projetos\2021\startup\projeto-1\monitor_tracker.sql
+
+Restaurar o Banco com um script.sql
+ref: https://phoenixnap.com/kb/how-to-backup-restore-a-mysql-database
+
+mysql -u [user] -p [database_name] < [filename].sql
+
