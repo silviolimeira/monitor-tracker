@@ -1,0 +1,6 @@
+applications:
+  - name: MonitorTrackerAPP
+path: target/monitor-tracker-1.0.jar
+domain: cfapps.io
+memory: 950M
+instances: 1

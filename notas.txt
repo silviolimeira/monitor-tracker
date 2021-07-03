@@ -7,6 +7,9 @@ $ mvn spring-boot:run
 $ ./mvnw spring-boot:run
 
 
+Project Id GCP:
+Monitor Tracker: monitor-tracker
+
 
 Projeto String:
 /d/projetos/2021/startup/demo-spring-boot-mvc (main)
