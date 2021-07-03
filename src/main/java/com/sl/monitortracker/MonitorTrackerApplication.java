@@ -2,11 +2,19 @@ package com.sl.monitortracker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 //@SpringBootApplication(scanBasePackages = {"com.sl.api"})
 //@SpringBootApplication(scanBasePackages = "com.sl.api")
 @SpringBootApplication
-public class MonitorTrackerApplication {
+public class MonitorTrackerApplication extends WebMvcConfigurerAdapter {
+
+
+	@Override
+	public void addViewControllers(ViewControllerRegistry registry) {
+		registry.addViewController("/").setViewName("home");
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(MonitorTrackerApplication.class, args);
