@@ -8,10 +8,20 @@ Papéis > Criar Papel > Adicionar Permissoes:
 Criador de objeto do Storage
 
 
+[INFO] GCLOUD: Deployed service [default] to [https://monitor-tracker.rj.r.appspot.com]
+[INFO] GCLOUD:
+[INFO] GCLOUD: You can stream logs from the command line by running:
+[INFO] GCLOUD:   $ gcloud app logs tail -s default
+[INFO] GCLOUD:
+[INFO] GCLOUD: To view your application in the web browser run:
+[INFO] GCLOUD:   $ gcloud app browse
+
 $ gcloud config set project monitor-tracker
 $ gcloud config list
 
 $ mvn package appengine:deploy -Dmaven.test.skip=true
+
+$$$ mvn clean package appengine:deploy -P cloud-gcp
 
 https://cloud.spring.io/spring-cloud-gcp/reference/html/
 
