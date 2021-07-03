@@ -13,6 +13,10 @@ $ gcloud config list
 
 $ mvn package appengine:deploy -Dmaven.test.skip=true
 
+https://cloud.spring.io/spring-cloud-gcp/reference/html/
+
+Spring Cloud GCP:
+https://support.supermetrics.com/support/solutions/articles/19000124417-error-user-x-does-not-have-storage-objects-get-access-to-the-google-cloud-storage-object-
 
 Executando build:
 $ mvn clean install 
