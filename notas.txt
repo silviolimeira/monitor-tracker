@@ -1,4 +1,19 @@
 
+GCP:
+Nome do Projeto: Monitor Tracker
+ID do projeto: monitor-tracker
+Numero do projeto: 489123689686
+
+Papéis > Criar Papel > Adicionar Permissoes:
+Criador de objeto do Storage
+
+
+$ gcloud config set project monitor-tracker
+$ gcloud config list
+
+$ mvn package appengine:deploy -Dmaven.test.skip=true
+
+
 Executando build:
 $ mvn clean install 
 
