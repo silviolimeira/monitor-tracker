@@ -23,6 +23,12 @@ $ mvn package appengine:deploy -Dmaven.test.skip=true
 
 $$$ mvn clean package appengine:deploy -P cloud-gcp
 
+$$$$$$ mvn package appengine:deploy -Dapp.deploy.projectId=PROJECT_ID
+
+gcloud init
+gcloud app deploy
+
+
 https://cloud.spring.io/spring-cloud-gcp/reference/html/
 
 Spring Cloud GCP:
