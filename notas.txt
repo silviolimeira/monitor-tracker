@@ -117,3 +117,5 @@ ref: https://phoenixnap.com/kb/how-to-backup-restore-a-mysql-database
 
 mysql -u [user] -p [database_name] < [filename].sql
 
+Serving Web Content with Spring MVC:
+https://spring.io/guides/gs/serving-web-content/
